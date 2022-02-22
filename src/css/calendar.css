@@ -1,0 +1,103 @@
+.cols {
+  display: -ms-grid;
+  display: grid;
+  border-right: 0.3px solid #cccccc;
+  max-height: calc(100vh - 95px);
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, white, white), linear-gradient(to bottom, white, white), linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
+  background-position: top center, bottom center, top center, bottom center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 10px 100%, 10px 100%, 5px 100%, 5px 100%;
+  background-attachment: local, local, scroll, scroll;
+}
+
+.cols::-webkit-scrollbar {
+  display: none;
+}
+
+.cols > :first-child {
+  border-top: 0.3px solid #cccccc;
+  border-bottom: 0.3px solid #cccccc;
+  border-left: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (80px)[24];
+      grid-template-rows: repeat(24, 80px);
+}
+
+.cols > :first-child > * {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.cols > section {
+  display: -ms-grid;
+  display: grid;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, white, white), linear-gradient(to right, white, white), linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
+  background-position: left center, right center, left center, right center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 10px 100%, 10px 100%, 5px 100%, 5px 100%;
+  background-attachment: local, local, scroll, scroll;
+}
+
+.cols > section::-webkit-scrollbar {
+  display: none;
+}
+
+.cols > section > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40px (80px)[24];
+      grid-template-rows: 40px repeat(24, 80px);
+  border-left: 0.3px solid #cccccc;
+  min-height: 100vh;
+}
+
+.cols > section > div > div {
+  border-top: 0.3px solid #cccccc;
+}
+
+.cols > section .grid-box {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.cols > section .grid-box::-webkit-scrollbar {
+  display: none;
+}
+
+.cols > section .grid-box:hover .addAppoint-badge {
+  opacity: 1;
+}
+
+.cols > section .grid-box .addAppoint-badge {
+  position: absolute;
+  bottom: 10px;
+  opacity: 0;
+  -webkit-transition: opacity ease-in 0.5s;
+  transition: opacity ease-in 0.5s;
+}
+
+.cols > section .docList-row-item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,95 @@
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(../fonts/Nunito-Bold.ttf);
+}
+
+aside {
+  position: relative;
+  padding: 35px 40px;
+}
+
+.aside-actions {
+  margin-top: 150px;
+}
+
+.aside-actions > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 43px;
+}
+
+.aside-actions > div svg {
+  margin-right: 10px;
+}
+
+.aside-actions > :nth-child(5) {
+  width: 200px;
+  color: #ffffff;
+  background-color: #f97b5c;
+  border-radius: 10px;
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.aside-actions > :nth-child(5) span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  right: 20px;
+}
+
+.short-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 212px;
+  position: absolute;
+  bottom: 40px;
+  left: 35px;
+}
+
+.short-info > :first-child {
+  margin-right: 15px;
+}
+
+.short-info h3,
+.short-info p,
+.short-info a {
+  margin: 4px 0px;
+}
+
+.short-info h3 {
+  color: #282828;
+}
+
+.short-info a {
+  display: block;
+  color: #f97b5c;
+}

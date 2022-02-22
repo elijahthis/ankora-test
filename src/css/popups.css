@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(../fonts/Nunito-Bold.ttf);
+}
+
+.add-appointment-modal > div > div {
+  width: 420px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  color: #2e2222;
+  margin: 15px 0px 12px 0px;
+}
+
+form {
+  width: 420px;
+}
+
+form > * {
+  margin-bottom: 14px;
+}
+
+form > :first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+form > :first-child:hover {
+  cursor: pointer;
+}
+
+form > :first-child div {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #e4e4e4;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+form label {
+  display: block;
+  margin: 7px 0px;
+}
+
+form select,
+form textarea,
+form input[type="submit"] {
+  width: 386px;
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 13px 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: none;
+}
+
+form .date-time-input {
+  width: 190px;
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 13px 18px;
+  margin-right: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .date-time-input p {
+  display: inline-block;
+  margin: 0;
+}
+
+form .date-time-input input {
+  width: 30px;
+  height: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  opacity: 0;
+}
+
+form input,
+form select,
+form option,
+form textarea {
+  font-family: Nunito-Regular;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19.1px;
+  line-height: 100%;
+  color: #666666;
+}
+
+form input[type="submit"] {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600px;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  margin: 0;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

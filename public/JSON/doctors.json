@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "short-name": "Marvin T.",
+    "long-name": "Marvin Tunji-Ola",
+    "badge": "#D3E5FF",
+    "pic": "../images/doc.jpg"
+  },
+  {
+    "id": 2,
+    "short-name": "Mayowa A.",
+    "long-name": "Mayowa Alaseyori",
+    "badge": "#D3FFD5",
+    "pic": "../images/doc.jpg"
+  },
+  {
+    "id": 3,
+    "short-name": "Clement Q.",
+    "long-name": "Clement Quentin",
+    "badge": "#FFD3D9",
+    "pic": "../images/doc.jpg"
+  },
+  {
+    "id": 4,
+    "short-name": "Otca Devor",
+    "long-name": "Otca Devor",
+    "badge": "#E1D3FF",
+    "pic": "../images/doc.jpg"
+  },
+  {
+    "id": 5,
+    "short-name": "Hellia Satun",
+    "long-name": "Hellia Satun",
+    "badge": "#FFE8D3",
+    "pic": "../images/doc.jpg"
+  }
+]

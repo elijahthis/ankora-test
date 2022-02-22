@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Dental Check",
+    "tag": "dent",
+    "badge": "#FCFFE7",
+    "color": "#67760E"
+  },
+  {
+    "type": "Full Checkup",
+    "tag": "full",
+    "badge": "#FFF5E7",
+    "color": "#76400E"
+  },
+  {
+    "type": "Follow Up",
+    "tag": "foll",
+    "badge": "#E7F9FF",
+    "color": "#0E6376"
+  },
+  {
+    "type": "Surgery",
+    "tag": "surg",
+    "badge": "#FFE7E7",
+    "color": "#760E0E"
+  }
+]

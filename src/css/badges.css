@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(../fonts/Nunito-Bold.ttf);
+}
+
+.doc-badge {
+  width: 180px;
+  height: 30px;
+  border-radius: 50px;
+  padding: 3px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doc-badge > :first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doc-badge > :first-child p {
+  margin: 0;
+  margin-left: 8px;
+  color: #000000;
+}
+
+.doc-badge svg {
+  display: block;
+  position: absolute;
+  right: 10px;
+  fill: #666666;
+}
+
+.addAppoint-badge {
+  width: 201px;
+  height: 28px;
+  padding: 6px 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  color: #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addAppoint-badge p {
+  margin: 0;
+}
+
+.addAppoint-badge svg {
+  fill: #666666;
+}
+
+.addAppoint-badge:hover {
+  cursor: pointer;
+}

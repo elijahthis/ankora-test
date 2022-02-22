@@ -1,0 +1,65 @@
+@import "config";
+
+aside {
+  position: relative;
+  padding: 35px 40px;
+}
+.aside-actions {
+  margin-top: 150px;
+  & > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 43px;
+    svg {
+      margin-right: 10px;
+    }
+  }
+  & > :nth-child(5) {
+    width: 200px;
+    color: #ffffff;
+    background-color: $sec-col2;
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: relative;
+
+    span {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
+
+.short-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 212px;
+
+  position: absolute;
+  bottom: 40px;
+  left: 35px;
+
+  & > :first-child {
+    margin-right: 15px;
+  }
+
+  h3,
+  p,
+  a {
+    margin: 4px 0px;
+  }
+  h3 {
+    color: $prim-col4;
+  }
+  a {
+    display: block;
+    color: $sec-col2;
+  }
+}

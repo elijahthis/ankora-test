@@ -1,0 +1,46 @@
+header {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 40px;
+  & > :first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & > :first-child {
+      margin-left: 0px;
+    }
+  }
+  h3 {
+    span {
+      margin: 0px 5px;
+    }
+  }
+}
+
+.chev-div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  margin: 0px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-week {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: absolute;
+  right: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  & > * {
+    padding: 12px 28px;
+  }
+}

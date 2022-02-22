@@ -1,0 +1,89 @@
+.cols {
+  display: grid;
+  border-right: 0.3px solid #cccccc;
+  max-height: calc(100vh - 95px);
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  background-image: linear-gradient(to bottom, white, white),
+    linear-gradient(to bottom, white, white),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0)),
+    linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
+  background-position: top center, bottom center, top center, bottom center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 10px 100%, 10px 100%, 5px 100%, 5px 100%;
+  background-attachment: local, local, scroll, scroll;
+
+  & > :first-child {
+    border-top: 0.3px solid #cccccc;
+    border-bottom: 0.3px solid #cccccc;
+    border-left: 0;
+    // padding: 40px 0px;
+    display: grid;
+    grid-template-rows: repeat(24, 80px);
+    & > * {
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  & > section {
+    display: grid;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    background-image: linear-gradient(to right, white, white),
+      linear-gradient(to right, white, white),
+      linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0)),
+      linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
+    background-position: left center, right center, left center, right center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 10px 100%, 10px 100%, 5px 100%, 5px 100%;
+    background-attachment: local, local, scroll, scroll;
+    & > div {
+      display: grid;
+      grid-template-rows: 40px repeat(24, 80px);
+      border-left: 0.3px solid #cccccc;
+      min-height: 100vh;
+      & > div {
+        border-top: 0.3px solid #cccccc;
+      }
+    }
+    .grid-box {
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: scroll;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &:hover {
+        .addAppoint-badge {
+          opacity: 1;
+        }
+      }
+      .addAppoint-badge {
+        position: absolute;
+        bottom: 10px;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+      }
+    }
+    .docList-row-item {
+      display: grid;
+      place-items: center;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@import "config";
+.add-appointment-modal > div > div {
+  width: 420px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  color: #2e2222;
+  margin: 15px 0px 12px 0px;
+}
+
+form {
+  width: 420px;
+
+  & > * {
+    margin-bottom: 14px;
+  }
+
+  & > :first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    div {
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      background-color: #e4e4e4;
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  label {
+    display: block;
+    margin: 7px 0px;
+  }
+  select,
+  textarea,
+  input[type="submit"] {
+    width: 386px;
+    height: 42px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 13px 18px;
+    box-sizing: border-box;
+    resize: none;
+  }
+
+  .date-time-input {
+    width: 190px;
+    height: 42px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 13px 18px;
+    margin-right: 6px;
+    box-sizing: border-box;
+    resize: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      display: inline-block;
+      margin: 0;
+    }
+    input {
+      width: 30px;
+      height: 20px;
+      box-sizing: border-box;
+      position: absolute;
+      opacity: 0;
+    }
+  }
+
+  input,
+  select,
+  option,
+  textarea {
+    font-family: Nunito-Regular;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.1px;
+    line-height: 100%;
+    color: $prim-col1;
+  }
+  input[type="submit"] {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600px;
+    transition: opacity 0.8s;
+    margin: 0;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
