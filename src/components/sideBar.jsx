@@ -48,7 +48,7 @@ const SideBar = () => {
         <div>
           <h3 className="sb">Acme Clinic Inc.</h3>
           <p className="xs">Marvin Tunji-Ola</p>
-          <a href="#" className="xxs">
+          <a href="https://elijahthis-ankora-test.netlify.app" className="xxs">
             View Profile
           </a>
         </div>
