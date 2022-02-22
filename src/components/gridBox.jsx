@@ -8,7 +8,7 @@ const GridBox = ({ date, doc, ind, handleOpenModal, scheduleList }) => {
   //   }
   return (
     <div className="grid-box">
-      {scheduleList.map((appointment) => {
+      {scheduleList.forEach((appointment) => {
         if (
           appointment["from-date"] === date.toISOString().substring(0, 10) &&
           JSON.parse(appointment["from-time"]).hour === ind &&

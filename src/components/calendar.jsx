@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import Modal from "react-modal";
 
 import { DateContext } from "../contexts/dateContext";
-import { DocBadge, PatientBadge, AddAppointmentBadge } from "./badges";
+import { DocBadge} from "./badges";
 import AddAppointment from "./popups";
 import GridBox from "./gridBox";
 import "../css/calendar.css";

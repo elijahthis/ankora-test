@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/logo.svg";
+// import logo from "../images/logo.svg";
 
 const ProfileImage = ({ imgUrl, size }) => {
   const styles = {
@@ -13,6 +13,7 @@ const ProfileImage = ({ imgUrl, size }) => {
       <img
         src={imgUrl}
         style={{ display: "block", width: `${size}px`, height: `${size}px` }}
+        alt="profile"
       />
     </div>
   );

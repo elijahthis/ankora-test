@@ -48,7 +48,9 @@ const SideBar = () => {
         <div>
           <h3 className="sb">Acme Clinic Inc.</h3>
           <p className="xs">Marvin Tunji-Ola</p>
-          <a className="xxs">View Profile</a>
+          <a href="#" className="xxs">
+            View Profile
+          </a>
         </div>
       </div>
     </aside>
