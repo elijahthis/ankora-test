@@ -66,3 +66,11 @@ main {
   background-color: #ffffff;
   border-radius: 20px 0px 0px 20px;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}

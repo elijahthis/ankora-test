@@ -2,12 +2,12 @@ import { useEffect, useState, useContext } from "react";
 import Modal from "react-modal";
 
 import { DateContext } from "../contexts/dateContext";
-import { DocBadge} from "./badges";
+import { DocBadge } from "./badges";
 import AddAppointment from "./popups";
 import GridBox from "./gridBox";
 import "../css/calendar.css";
 
-const Calendar = () => {
+const Calendar = ({ openSide }) => {
   const { state } = useContext(DateContext);
   const [docList, setDocList] = useState([]);
   const [patientList, setPatientList] = useState([]);
@@ -87,6 +87,7 @@ const Calendar = () => {
       className="cols"
       style={{
         gridTemplateColumns: `135px 1fr`,
+        overflow: openSide ? "hidden" : "scroll",
       }}
     >
       <Modal
@@ -126,6 +127,7 @@ const Calendar = () => {
       <section
         style={{
           gridTemplateColumns: `repeat(${docList.length}, minmax(220px, 1fr))`,
+          overflow: openSide ? "hidden" : "scroll",
         }}
       >
         {/* <div></div> */}

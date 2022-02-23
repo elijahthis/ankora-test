@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import { DateContext } from "../contexts/dateContext";
 import "../css/header.css";
-import { BiChevronLeft } from "react-icons/bi";
-import { BiChevronRight } from "react-icons/bi";
+import { BiChevronLeft, BiChevronRight, BiMenu } from "react-icons/bi";
 
-const Header = () => {
+const Header = ({ setOpenSide }) => {
   const { state, dispatchDate } = useContext(DateContext);
 
   const printDate = (date) =>
@@ -19,6 +18,13 @@ const Header = () => {
       {/* date: {state.date}; */}
       <header>
         <div>
+          <BiMenu
+            size={30}
+            className="menu"
+            onClick={() => {
+              setOpenSide(true);
+            }}
+          />
           <div
             className="chev-div"
             onClick={() => {

@@ -30,8 +30,22 @@ header > :first-child > :first-child {
   margin-left: 0px;
 }
 
-header h3 span {
-  margin: 0px 5px;
+header h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 5px;
+}
+
+.menu {
+  display: none;
 }
 
 .chev-div {
@@ -52,9 +66,7 @@ header h3 span {
 }
 
 .day-week {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -70,4 +82,33 @@ header h3 span {
 
 .day-week > * {
   padding: 12px 28px;
+}
+
+@media screen and (max-width: 895px) {
+  .menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .chev-div {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  header h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 5px;
+  }
+  header .m {
+    font-size: 1rem;
+  }
 }

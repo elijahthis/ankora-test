@@ -12,9 +12,9 @@ import {
 import { FiSettings } from "react-icons/fi";
 import { GrAdd } from "react-icons/gr";
 
-const SideBar = () => {
+const SideBar = ({ openSide }) => {
   return (
-    <aside>
+    <aside className={openSide ? "aside-open" : ""}>
       <img src={logo} alt="" />
       <div className="aside-actions">
         <p>Quick Actions</p>

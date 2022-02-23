@@ -11,6 +11,11 @@
 aside {
   position: relative;
   padding: 35px 40px;
+  background-color: #ffffff;
+  z-index: 2;
+  height: clamp(640px, 100%, 10000px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .aside-actions {
@@ -92,4 +97,16 @@ aside {
 .short-info a {
   display: block;
   color: #f97b5c;
+}
+
+@media screen and (max-width: 895px) {
+  aside {
+    position: absolute;
+    left: -281px;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+  .aside-open {
+    left: 0;
+  }
 }

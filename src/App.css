@@ -5,3 +5,9 @@
   box-sizing: border-box;
   background-color: #fffdf8;
 }
+
+@media screen and (max-width: 895px) {
+  .App {
+    display: block;
+  }
+}

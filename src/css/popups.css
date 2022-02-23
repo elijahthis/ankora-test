@@ -143,3 +143,12 @@ form input[type="submit"]:hover {
   cursor: pointer;
   opacity: 0.8;
 }
+
+@media screen and (max-width: 895px) {
+  .add-appointment-modal > div > div {
+    width: 80vw;
+  }
+  form {
+    width: 420px;
+  }
+}

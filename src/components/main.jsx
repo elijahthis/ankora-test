@@ -3,7 +3,7 @@ import { DateContext } from "../contexts/dateContext";
 import Header from "./header";
 import Calendar from "./calendar";
 
-const Main = () => {
+const Main = ({ openSide, setOpenSide }) => {
   const today = new Date();
   const initialState = { date: today };
   const dateReducer = (state, action) => {
@@ -25,11 +25,21 @@ const Main = () => {
   return (
     <main>
       <DateContext.Provider value={{ state, dispatchDate }}>
-        <Header />
+        <Header setOpenSide={setOpenSide} />
         <section>
-          <Calendar />
+          <Calendar openSide={openSide} />
         </section>
       </DateContext.Provider>
+      <div
+        className="overlay"
+        style={{
+          backgroundColor: openSide ? "rgba(0,0,0,0.5)" : "transparent",
+          zIndex: openSide ? "1" : "-1",
+        }}
+        onClick={() => {
+          setOpenSide(false);
+        }}
+      ></div>
     </main>
   );
 };
